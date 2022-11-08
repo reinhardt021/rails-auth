@@ -16,7 +16,7 @@ Simple Authentication App in Rails
 
 ## TESTING
 
-- How to run the test suite
+- How to run the test suite in command-line: `bundle exec rspec`
 
 ## OTHER STUFF
 
