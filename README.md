@@ -13,7 +13,7 @@ Simple Authentication App in Rails
 
 ## SETUP
 
-- Configuration
+- Configuration: run `bundle install`
 - Database creation: 'bin/rails db:create'
 - Database initialization: 'bin/rails db:migrate'
 
@@ -23,6 +23,7 @@ Simple Authentication App in Rails
 
 ## OTHER STUFF
 
+- run the server: `bin/rails server`
 - Services (job queues, cache servers, search engines, etc.)
 - Deployment instructions
 - ...
