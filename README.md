@@ -28,7 +28,7 @@ Simple Authentication App in Rails
 
 ## TODO:
 
-- [ ] create HOME view
+- [x] create HOME view
 - [ ] create database: `rails db:create`
 - [ ] create Migration
     - [ ] create User table: email, password
