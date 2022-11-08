@@ -1,2 +1,8 @@
 <h1>Signup</h1>
 <p>Create an account by providing an Email and password.</p>
+<%= form_with model: @user do |form|  %>
+  <%= form.email_field :email %>
+  <%= form.password_field :password %>
+  <%= form.password_field :password_confirmation %>
+  <%= form.submit %>
+<% end %>
