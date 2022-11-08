@@ -28,15 +28,15 @@ Simple Authentication App in Rails
 
 ## TODO:
 
-[] create HOME view
-[] create database: `rails db:create`
-[] create Migration
-    [] create User table: email, password
-    [] timestamps
-    [] add index on user email column
-[] create User Models
-[] create REGISTER view
-[] create REGISTER route
+- [] create HOME view
+- [] create database: `rails db:create`
+- [] create Migration
+    - [] create User table: email, password
+    - [] timestamps
+    - [] add index on user email column
+- [] create User Models
+- [] create REGISTER view
+- [] create REGISTER route
 
 ### MODELS
 
