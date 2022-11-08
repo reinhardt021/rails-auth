@@ -26,7 +26,7 @@ Simple Authentication App in Rails
 
 ---
 
-### TODO:
+## TODO:
 
 [] create HOME view
 [] create database: `rails db:create`
