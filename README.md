@@ -31,13 +31,16 @@ Simple Authentication App in Rails
 - [x] create HOME view
 - [x] create REGISTER route
 - [x] create REGISTER view
-- [ ] create database: `rails db:create`
-- [ ] create Migration
-    - [ ] create User table: email, password
-    - [ ] timestamps
-    - [ ] add index on user email column
-- [ ] create User Models
+- [x] create database: `rails db:create`
+- [x] create Migration
+    - [x] create User table: email, password
+    - [x] timestamps
+    - [x] add index on user email column
+- [x] create User Models
 - [ ] create REGISTER form
+- [ ] handle form submit to create
+- [ ] handle form submit to redirect
+- [ ] change to use warden to redirect from home to register page
 
 ### MODELS
 
