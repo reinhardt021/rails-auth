@@ -6,13 +6,16 @@ Simple Authentication App in Rails
 
 - Ruby version: 3.0.0
 - Rails version: ~7.0.3
+- rspec-rails
+- shoulda-matchers
+- bcrypt
 - warden gem
 
 ## SETUP
 
-- Configuration
-- Database creation
-- Database initialization
+- Configuration: run `bundle install`
+- Database creation: 'bin/rails db:create'
+- Database initialization: 'bin/rails db:migrate'
 
 ## TESTING
 
@@ -20,6 +23,7 @@ Simple Authentication App in Rails
 
 ## OTHER STUFF
 
+- run the server: `bin/rails server`
 - Services (job queues, cache servers, search engines, etc.)
 - Deployment instructions
 - ...
@@ -29,14 +33,18 @@ Simple Authentication App in Rails
 ## TODO:
 
 - [x] create HOME view
-- [ ] create database: `rails db:create`
-- [ ] create Migration
-    - [ ] create User table: email, password
-    - [ ] timestamps
-    - [ ] add index on user email column
-- [ ] create User Models
-- [ ] create REGISTER view
-- [ ] create REGISTER route
+- [x] create REGISTER route
+- [x] create REGISTER view
+- [x] create database: `rails db:create`
+- [x] create Migration
+    - [x] create User table: email, password
+    - [x] timestamps
+    - [x] add index on user email column
+- [x] create User Models
+- [x] create REGISTER form
+- [x] handle form submit to create
+- [x] handle form submit to redirect
+- [ ] change to use warden to redirect from home to register page
 
 ### MODELS
 

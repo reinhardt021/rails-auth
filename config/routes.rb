@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   root "home#index"
   get '/', to: 'home#index'
 
+  get '/register', to: 'users#new'
+  post '/users', to: 'users#create'
+
+  get '/logout', to: 'sessions#destroy' # TODO: change to proper delete route
 end
