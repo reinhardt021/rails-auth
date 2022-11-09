@@ -6,4 +6,7 @@ Rails.application.routes.draw do
 
   get '/register', to: 'users#new'
   post '/users', to: 'users#create'
+
+  get '/logout', to: 'sessions#destroy'
+  #resources :sessions, only: [:new, :create, :destroy]
 end
