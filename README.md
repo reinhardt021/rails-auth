@@ -42,8 +42,8 @@ Simple Authentication App in Rails
     - [x] add index on user email column
 - [x] create User Models
 - [x] create REGISTER form
-- [ ] handle form submit to create
-- [ ] handle form submit to redirect
+- [x] handle form submit to create
+- [x] handle form submit to redirect
 - [ ] change to use warden to redirect from home to register page
 
 ### MODELS
