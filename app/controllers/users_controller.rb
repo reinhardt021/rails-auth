@@ -4,12 +4,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    user_stuff = user_params
-    puts user_stuff.inspect
-    @user = User.create(user_stuff)
-    @user.email = 'test@test.com'
-    puts @user.email
-    puts @user.inspect
+    @user = User.create(user_params)
     if @user.save
       redirect_to root_path, notice: "Signed up!"
     else
