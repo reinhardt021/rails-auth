@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get '/register', to: 'users#new'
   post '/users', to: 'users#create'
 
-  get '/logout', to: 'sessions#destroy'
+  get '/logout', to: 'sessions#destroy' # TODO: change to proper delete route
 end
