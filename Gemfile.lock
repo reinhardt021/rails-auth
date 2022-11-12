@@ -206,6 +206,8 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
+    warden (1.2.9)
+      rack (>= 2.0.9)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -243,6 +245,7 @@ DEPENDENCIES
   stimulus-rails
   turbo-rails
   tzinfo-data
+  warden
   web-console
   webdrivers
 
