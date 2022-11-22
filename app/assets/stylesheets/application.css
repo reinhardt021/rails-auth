@@ -22,28 +22,28 @@ body {
     padding: 10%;
 }
 
-.signup {
+.auth {
     padding: 10%;
 }
 
-.signup__errors {
+.auth__errors {
     color: red;
 }
 
-.signup__form {
+.auth__form {
     text-align: left;
 }
 
-.signup__field {
+.auth__field {
     text-align: left;
     padding-bottom: 0.5em;
 }
 
-.signup__label {
+.auth__label {
     display: block;
 }
 
-.signup__input {
+.auth__input {
     width: 30%;
 }
 
