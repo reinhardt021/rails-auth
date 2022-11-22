@@ -1,17 +1,31 @@
-<h1>Sign Up</h1>
-<p>Create an account by providing an Email and password.</p>
-<%= form_with model: @user do |form|  %>
-  <div>
-    <%= form.label :email %>
-    <%= form.email_field :email %>
-  </div>
-  <div>
-    <%= form.label :password %>
-    <%= form.password_field :password %>
-  </div>
-  <div>
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation %>
-  </div>
-  <%= form.submit %>
-<% end %>
+<main class="signup">
+  <h1>Sign Up</h1>
+  <p>Create an account by providing an Email and password.</p>
+  <% if @user.errors.any? %>
+    <div class="signup__errors">
+      <h2>Errors:</h2>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li> <%= msg %> </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= form_with model: @user, data: { turbo: false }, html: { class: 'signup__form' } do |form|  %>
+      <div class="signup__field">
+        <%= form.label :email, class: 'signup__label' %>
+        <%= form.email_field :email, class: 'signup__input' %>
+      </div>
+      <div class="signup__field">
+        <%= form.label :password, class: 'signup__label' %>
+        <%= form.password_field :password, class: 'signup__input' %>
+      </div>
+      <div class="signup__field">
+        <%= form.label :password_confirmation, class: 'signup__label' %>
+        <%= form.password_field :password_confirmation, class: 'signup__input' %>
+      </div>
+
+      <%= form.submit class: 'signup__submit' %>
+    </div>
+  <% end %>
+<main>

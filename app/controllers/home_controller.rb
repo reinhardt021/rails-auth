@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    if !session[:user_id] then
+    if !current_user then
       redirect_to register_url
     end
   end

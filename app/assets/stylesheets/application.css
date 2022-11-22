@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    font-family: sans-serif;
+}
+
+.home {
+    padding: 10%;
+}
+
+.signup {
+    padding: 10%;
+}
+
+.signup__errors {
+    color: red;
+}
+
+.signup__form {
+    text-align: left;
+}
+
+.signup__field {
+    text-align: left;
+    padding-bottom: 0.5em;
+}
+
+.signup__label {
+    display: block;
+}
+
+.signup__input {
+    width: 30%;
+}
+
