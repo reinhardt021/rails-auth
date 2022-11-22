@@ -22,11 +22,12 @@ body {
 
 .signup {
     text-align: center;
+    padding: 0 15%;
 }
 
 .signup__field {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     padding: 0.5em;
 }
@@ -34,4 +35,8 @@ body {
 .signup__label {
     text-align: right;
     margin-right: 0.5em;
+}
+
+.signup__submit {
+    grid-column: 1 / span 2;
 }
