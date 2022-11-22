@@ -1,6 +1,6 @@
 <main class="auth">
-  <h1>Sign Up</h1>
-  <p>Create an account by providing an Email and password.</p>
+  <h1>Login</h1>
+  <p>Login with your Email and password.</p>
   <% if @user.errors.any? %>
     <div class="auth__errors">
       <h2>Errors:</h2>
@@ -20,12 +20,9 @@
         <%= form.label :password, class: 'auth__label' %>
         <%= form.password_field :password, class: 'auth__input' %>
       </div>
-      <div class="auth__field">
-        <%= form.label :password_confirmation, class: 'auth__label' %>
-        <%= form.password_field :password_confirmation, class: 'auth__input' %>
-      </div>
 
       <%= form.submit class: 'auth__submit' %>
     </div>
   <% end %>
 <main>
+
