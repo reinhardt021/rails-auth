@@ -16,32 +16,31 @@
 
 body {
     font-family: sans-serif;
-    padding: 15%;
-    text-align: center;
 }
 
 .signup {
-    text-align: center;
-    padding: 0 15%;
+    padding: 10%;
 }
 
 .signup__errors {
     color: red;
-    padding: 0 15%;
 }
 
+.signup__form {
+    text-align: left;
+}
+
+
 .signup__field {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    padding: 0.5em;
+    text-align: left;
+    padding-bottom: 0.5em;
 }
 
 .signup__label {
-    text-align: right;
-    margin-right: 0.5em;
+    display: block;
 }
 
-.signup__submit {
-    grid-column: 1 / span 2;
+.signup__input {
+    width: 30%;
 }
+
