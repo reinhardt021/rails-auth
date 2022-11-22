@@ -25,6 +25,11 @@ body {
     padding: 0 15%;
 }
 
+.signup__errors {
+    color: red;
+    padding: 0 15%;
+}
+
 .signup__field {
     display: grid;
     grid-template-columns: 1fr 2fr;

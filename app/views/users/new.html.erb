@@ -1,6 +1,18 @@
 <h1>Sign Up</h1>
 <p>Create an account by providing an Email and password.</p>
-<%= form_with model: @user, html: { class: 'signup' } do |form|  %>
+<% if @user.errors.any? %>
+  <div class="signup__errors">
+    <h2>Errors:</h2>
+    <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li>
+          <%= msg %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<%= form_with model: @user, data: { turbo: false }, html: { class: 'signup' } do |form|  %>
   <div class="signup__field">
     <%= form.label :email, class: 'signup__label' %>
     <%= form.email_field :email %>
