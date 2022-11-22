@@ -44,8 +44,8 @@ Simple Authentication App in Rails
 - [x] create REGISTER form
 - [x] handle form submit to create
 - [x] handle form submit to redirect
-- [ ] manually destroy duplicate emails
-- [ ] make emails unique in the database
+- [x] manually destroy duplicate emails
+- [x] make emails unique in the database
 
 - [ ] play FIREPLACE background (might only work at night)
 
