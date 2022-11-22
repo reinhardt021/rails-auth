@@ -1,15 +1,15 @@
 <h1>Sign Up</h1>
 <p>Create an account by providing an Email and password.</p>
 <%= form_with model: @user do |form|  %>
-  <div>
+  <div class="form-field">
     <%= form.label :email %>
     <%= form.email_field :email %>
   </div>
-  <div>
+  <div class="form-field">
     <%= form.label :password %>
     <%= form.password_field :password %>
   </div>
-  <div>
+  <div class="form-field">
     <%= form.label :password_confirmation %>
     <%= form.password_field :password_confirmation %>
   </div>

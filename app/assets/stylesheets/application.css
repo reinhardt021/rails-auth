@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    font-family: sans-serif;
+    padding: 15%;
+    text-align: center;
+}
+
+.form-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
