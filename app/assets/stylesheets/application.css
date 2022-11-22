@@ -20,8 +20,18 @@ body {
     text-align: center;
 }
 
-.form-field {
+.signup {
+    text-align: center;
+}
+
+.signup__field {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    padding: 0.5em;
+}
+
+.signup__label {
+    text-align: right;
+    margin-right: 0.5em;
 }
