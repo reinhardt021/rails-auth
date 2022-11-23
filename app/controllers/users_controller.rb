@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       warden.set_user @user
-      redirect_to root_path, notice: "Signed up!"
+      redirect_to root_path #, notice: "Signed up!"
     else
       render :new
     end
