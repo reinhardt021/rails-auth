@@ -54,7 +54,7 @@ can probably do these first then change to warden later
 
 - [ ] play FIREPLACE background (might only work at night)
 
-- [ ] change to use warden to redirect from home to register page
+- [x] change to use warden to redirect from home to register page
 
 
 ### MODELS
