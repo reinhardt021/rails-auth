@@ -1,17 +1,17 @@
 <main class="auth">
-  <h1>Sign Up</h1>
-  <p>Create an account by providing an Email and password.</p>
-  <% if @user.errors.any? %>
+  <h1>Login</h1>
+  <p>Login with your Email and password.</p>
+  <% if !@errors.empty? %>
     <div class="auth__errors">
       <h2>Errors:</h2>
       <ul>
-        <% @user.errors.full_messages.each do |msg| %>
+        <% @errors.each do |msg| %>
           <li> <%= msg %> </li>
         <% end %>
       </ul>
     </div>
   <% end %>
-  <%= form_with model: @user, url: register_path, data: { turbo: false }, html: { class: 'auth__form' } do |form|  %>
+  <%= form_with url: login_path, data: { turbo: false }, html: { class: 'auth__form' } do |form|  %>
       <div class="auth__field">
         <%= form.label :email, class: 'auth__label' %>
         <%= form.email_field :email, class: 'auth__input' %>
@@ -20,15 +20,12 @@
         <%= form.label :password, class: 'auth__label' %>
         <%= form.password_field :password, class: 'auth__input' %>
       </div>
-      <div class="auth__field">
-        <%= form.label :password_confirmation, class: 'auth__label' %>
-        <%= form.password_field :password_confirmation, class: 'auth__input' %>
-      </div>
 
       <%= form.submit class: 'auth__submit' %>
     </div>
   <% end %>
   <p>
-    Already have an account? <%=  link_to "Login", login_path %>
+    Need an account? <%=  link_to "Sign Up", register_path %>
   </p>
 <main>
+
