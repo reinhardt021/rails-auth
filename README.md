@@ -47,14 +47,15 @@ Simple Authentication App in Rails
 - [x] manually destroy duplicate emails
 - [x] make emails unique in the database
 
+can probably do these first then change to warden later
+- [x] create login route
+- [x] create login page with form
+- [x] create Session Controller
+
 - [ ] play FIREPLACE background (might only work at night)
 
 - [ ] change to use warden to redirect from home to register page
 
-can probably do these first then change to warden later
-- [ ] create login route
-- [ ] create login page with form
-- [ ] create Session Controller
 
 ### MODELS
 
