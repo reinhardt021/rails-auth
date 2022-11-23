@@ -3,8 +3,8 @@ class ApplicationController < ActionController::Base
 
   private
     def current_user
-      #warden.user
-      session[:user_id]
+      #session[:user_id]
+      warden.user
     end
     helper_method :current_user
 
