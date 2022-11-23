@@ -106,5 +106,19 @@ can probably do these first then change to warden later
     - users/new.html.erb
     - sessions/new.html.erb
 
+### REFERENCES
 
+- https://github.com/wardencommunity/warden
+- https://github.com/wardencommunity/rails_warden
+- https://github.com/pigri/sinatra-warden-api 
+- https://gorails.com/forum/warden-and-system-tests-are-driving-me-insane
+- https://www.railstutorial.org/book/rails_flavored_ruby#sec-constructors
+- https://www.karinabaha.com/posts/ruby-on-rails-has_secure_password-tutorial
+- https://code.tutsplus.com/articles/how-to-build-an-unobtrusive-login-system-in-rails--net-9194
+- https://www.karinabaha.com/posts/ruby-on-rails-has_secure_password-tutorial
+- https://lucatironi.net/tutorial/2015/08/23/rails_api_authentication_warden/
+- http://railscasts.com/episodes/250-authentication-from-scratch
+- http://railscasts.com/episodes/270-authentication-in-rails-3-1
+  - https://github.com/railscasts/270-authentication-in-rails-3-1/tree/master/auth-before/config
+- http://railscasts.com/episodes/305-authentication-with-warden?view=asciicast
 
